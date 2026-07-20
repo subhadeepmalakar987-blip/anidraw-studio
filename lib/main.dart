@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   runApp(const AniDrawStudio());
@@ -13,26 +14,12 @@ class AniDrawStudio extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'AniDraw Studio',
       theme: ThemeData.dark(),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+একটা প্রশ্ন: তুমি কি চাও অ্যাপ চালু হলে ৩ সেকেন্ড Splash Screen দেখিয়ে তারপর Home Screen-এ চলে যাক, নাকি আপাতত শুধু Splash Screen-ই দেখালেই হবে?
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('AniDraw Studio'),
-      ),
-      body: const Center(
-        child: Text(
-          'Welcome to AniDraw Studio',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  }
-}
+You’re out of attachments for now. Start a free Plus trial for more, or try again tomorrow after 6:30 AM.
+Try Plus free
