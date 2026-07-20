@@ -1,39 +1,36 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const AniDrawStudioApp());
+  runApp(const AniDrawStudio());
 }
 
-class AniDrawStudioApp extends StatelessWidget {
-  const AniDrawStudioApp({super.key});
+class AniDrawStudio extends StatelessWidget {
+  const AniDrawStudio({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AniDraw Studio',
-      theme: ThemeData(
-        useMaterial3: true,
-        brightness: Brightness.dark,
-      ),
-      home: const SplashScreen(),
+      theme: ThemeData.dark(),
+      home: const HomeScreen(),
     );
   }
 }
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AniDraw Studio'),
+      ),
+      body: const Center(
         child: Text(
-          'AniDraw Studio',
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-          ),
+          'Welcome to AniDraw Studio',
+          style: TextStyle(fontSize: 24),
         ),
       ),
     );
