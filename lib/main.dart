@@ -18,8 +18,3 @@ class AniDrawStudio extends StatelessWidget {
     );
   }
 }
-
-একটা প্রশ্ন: তুমি কি চাও অ্যাপ চালু হলে ৩ সেকেন্ড Splash Screen দেখিয়ে তারপর Home Screen-এ চলে যাক, নাকি আপাতত শুধু Splash Screen-ই দেখালেই হবে?
-
-You’re out of attachments for now. Start a free Plus trial for more, or try again tomorrow after 6:30 AM.
-Try Plus free
