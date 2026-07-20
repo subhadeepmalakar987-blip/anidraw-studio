@@ -1,7 +1,29 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'home_screen.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+
+  @override
+  void initState() {
+    super.initState();
+
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
+        ),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -9,10 +31,10 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Text(
-          'AniDraw Studio',
+          "AniDraw Studio",
           style: TextStyle(
             color: Colors.white,
-            fontSize: 32,
+            fontSize: 34,
             fontWeight: FontWeight.bold,
           ),
         ),
